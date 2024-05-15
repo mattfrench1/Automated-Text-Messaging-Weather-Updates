@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Features{% endblock %}
+{% block content %}
+
+<h1>About the Weather Features</h1>
+
+<h2>OpenWeather API</h2>
+<img src="{{ url_for('static', filename='images/openweather.jpg')}}">
+<p>The weather data will be generated from the OpenWeather API. This ensures 
+    the highest accuracy possible to provide users with reliable weather updates.
+</p>
+
+<h2>Forecast</h2>
+<img src="{{ url_for('static', filename='images/forecast.jpg')}}">
+<p>Forecast for the day will be provided so users can receive weather updates before
+    they leave to determine what clothes they should wear for the day.
+
+</p>
+
+
+<h2>Pollen</h2>
+<img src="{{ url_for('static', filename='images/pollen.jpg')}}">
+<p>Pollen levels in certain plants/trees that individuals may be sensitive to
+    will be provided.
+</p>
+
+<h2>Solar Levels</h2>
+<img src="{{ url_for('static', filename='images/solar.jpg')}}">
+<p>Solar levels will provide users with data regarding how strong the Sun will be 
+    to give them an idea if they should wear Sun protective clothing or sunscreen.
+</p>
+
+
+
+{% endblock %}

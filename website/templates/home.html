@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h1 align="center">Get Daily Weather Updates!</h1>
+<p>New Features: Solar Option now available to select</p>
+
+<h2>Get Daily Updates</h2>
+<p>Hello all new users! Welcome to the Daily Weather Updates Site! Enter your phone 
+    number to receive daily updates on the weather in the form of a text message. You 
+    can choose to have updates on the weather in the form of pollen levels, air quality, 
+    forecasts, and solar levels. Head over to the Login Page to login or create an account. 
+    From there, navigate to the Features page to customize your weather report. Enjoy!
+</p>
+
+<img src="{{ url_for('static', filename='images/weather.jpg')}}">
+
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+<h1 align="center">Set Your Daily Weather Updates!</h1>
+<form method="POST">
+    <label for="location">
+        <input type="text" id="location" name="location" value="">City
+    </label><br>
+    <label for="pollen">
+        <input type="checkbox" id="pollen" name="pollen" value="pollen"> Pollen
+    </label><br>
+    <label for="airquality">
+        <input type="checkbox" id="airquality" name="airquality" value="airquality"> Air Quality
+    </label><br>
+    <label for="forecast">
+        <input type="checkbox" id="forecast" name="forecast" value="forecast"> Forecast
+    </label><br>
+    <label for="solar">
+        <input type="checkbox" id="solar" name="solar" value="solar"> Solar
+    </label><br>
+    <label for="phonenumber">
+        <input type="text" id="phonenumber" name="phonenumber" value=""> Phone Number
+    </label><br>
+
+    <label for="phoneprovider">
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="AT&T">AT&T 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Boost Mobile">Boost Mobile 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="C-Spire">C-Spire 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Cricket Wireless">Cricket Wireless 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Consumer Cellular">Consumer Cellular
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Google Project Fi">Google Project Fi 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Metro PCS">Metro PCS 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Mint Mobile">Mint Mobile 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Page Plus">Page Plus
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Republic Wireless">Republic Wireless 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Sprint">Sprint 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Straight Talk">Straight Talk 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="T-Mobile">T-Mobile
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Ting">Ting 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Tracfone">Tracfone 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="U.S. Cellular">U.S. Cellular 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Verizon">Verizon 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Virgin Mobile">Virgin Mobile 
+        <input type="radio" id="phoneprovider" name="phoneprovider" value="Xfinity Mobile">Xfinity Mobile
+    </label><br>
+
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Features</button>
+    </div>
+</form>
+
+<br />
+
+<h2 align="center">Daily Forecast Option</h2>
+<form method="POST">
+    <label for="location">
+        <input type="text" id="location" name="location" value="">City  
+    </label><br>
+    <label for="phonenumber">
+        <input type="text" id="phonenumber" name="phonenumber" value=""> Phone Number
+    </label><br>
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Features</button>
+    </div>
+</form>
+
+{% endblock %}
